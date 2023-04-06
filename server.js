@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const userRouter = require("./routes/userRoute");
 const notesRouter = require("./routes/notesRoute");
+const productRouter = require("./routes/productRoute");
 
 dotenv.config();
 
@@ -22,6 +23,7 @@ app.get("/", (req, res) => {
 
 app.use("/user", userRouter);
 app.use("/notes", notesRouter);
+app.use("/product", productRouter);
 
 mongoose.set("strictQuery", false);
 
