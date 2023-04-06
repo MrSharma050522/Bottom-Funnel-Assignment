@@ -4,13 +4,13 @@ const productSchema = new mongoose.Schema(
   {
     name: {
       type: String,
-      required: [true, "Please enter the Title"],
+      required: [true, "Please enter the name of Product"],
       min: 3,
       trim: true,
     },
     price: {
       type: String,
-      required: [true, "Please enter the Task"],
+      required: [true, "Please enter the price of Product"],
       min: 3,
       trim: true,
     },
